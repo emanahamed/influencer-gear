@@ -1,0 +1,303 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400;500&display=swap');
+
+
+/* ---------
+DESKTOP VIEW
+---------- */
+/* Common Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-items ul {
+    display: flex;
+
+}
+
+.nav-items li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #0A0826;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.nav-items-mobile {
+    display: none;
+}
+
+.nav-cart-mobile {
+    display: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.hero-description {
+    color: #3A3A3A;
+    padding-right: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-description h1 {
+    font-weight: 700px;
+    font-size: 52px;
+}
+
+.hero-description h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hero-description button {
+    border: none;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+
+
+
+}
+
+.hero-image {
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("images/circle-design.svg");
+}
+
+.hero-image img {
+    width: 440px;
+    left: 414px;
+}
+
+/* Partners */
+.partners {
+    margin-bottom: 90px;
+}
+
+.partners hr {
+    color: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%);
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Shop */
+.popular-collection h2 {
+    font-weight: 600px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.39);
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #e3e2e2;
+}
+
+.item img {
+    height: 256px;
+    width: 100%;
+
+}
+
+.item h3 {
+    font-weight: 500px;
+    font-size: 28px;
+    color: #18191F;
+    margin: 5px 0;
+}
+
+.item h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.item p {
+    color: rgba(94, 99, 102, 1);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.item span {
+    color: #FB8200;
+    padding-right: 15px;
+}
+
+/* Join Now */
+.join-now {
+    display: flex;
+    margin: 40px 0;
+}
+
+.feature-image {
+    height: 270px;
+    width: 404px;
+    margin-top: 15px;
+}
+
+.feature-description {
+    padding-left: 25px;
+}
+
+.feature-description h1 {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.feature-description p {
+    font-weight: 700px;
+    font-size: 16px;
+}
+
+.feature-description button {
+    border: none;
+    background-color: #E02C6D;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    margin: 20px;
+}
+
+.social i {
+    padding: 0px 15px;
+    font-size: 20px;
+}
+
+/* --------
+MOBILE VIEW
+-------- */
+@media only screen and (max-width:688px) {
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .logo h2 {
+        margin: 0;
+        display: inline;
+    }
+
+    .nav-items-mobile {
+        list-style: none;
+        display: inline;
+        margin-top: 8px;
+    }
+
+    .nav-cart-mobile {
+        list-style: none;
+        display: inline;
+        margin-top: 8px;
+    }
+
+    .nav-cart-mobile a {
+        color: #0A0826;
+        text-decoration: none;
+    }
+
+    .nav-cart-mobile li {
+        list-style: none;
+    }
+
+    .nav-items-mobile a {
+        text-decoration: none;
+        color: #0A0826;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px 20px;
+    }
+
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        width: 90%;
+    }
+
+    .join-now {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 90%;
+    }
+}
